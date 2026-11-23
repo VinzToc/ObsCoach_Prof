@@ -1,9 +1,9 @@
 /* Service worker StatObs – tout est mis en cache : l'app fonctionne sans réseau.
    Pour publier une mise à jour : changer VERSION ci-dessous. */
-const VERSION = 'v3';
+const VERSION = 'v4';
 const CACHE = 'statobs-' + VERSION;
 
-const CORE = [
+const CORE = ['nouveautes.js','nouveautes.json',
   './', 'index.html', 'panneau_saisie.html', 'statistiques.html',
   'statobs.css', 'statobs.js', 'eps-core.js', 'eps-xlsx.js', 'statobs-bilan.js', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-maskable-512.png', 'icons/apple-touch-icon.png'
