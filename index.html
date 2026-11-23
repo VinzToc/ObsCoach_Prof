@@ -13,12 +13,20 @@
 <meta name="apple-mobile-web-app-title" content="StatObs">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="stylesheet" href="statobs.css">
+
+<style id="titre-moderne">/* Titre en casse mixte + logo mis en valeur, aux couleurs du logo */
+.brand h1{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif!important;font-style:italic!important;font-weight:900!important;text-transform:none!important;letter-spacing:.005em!important;line-height:1.08;background:none!important;-webkit-text-stroke:0!important;color:#1b1b1b!important;-webkit-text-fill-color:#1b1b1b!important;text-shadow:none!important}
+.brand h1 .tm{background:linear-gradient(180deg,#ffd21a,#f29500 72%)!important;-webkit-background-clip:text!important;background-clip:text!important;color:#f29500!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important;filter:none}
+.brand h1 small,.brand h1 em{font-style:normal!important;text-shadow:none!important;-webkit-text-fill-color:currentColor!important}
+.brand img{border-radius:22%!important;box-shadow:0 0 0 2px rgba(255,255,255,.3),0 0 22px rgba(247,198,20,.6),0 6px 16px rgba(0,0,0,.4)!important;transition:transform .3s}
+.brand img:hover{transform:rotate(-5deg) scale(1.05)}
+.brand h1 .tm{filter:drop-shadow(0 2px 0 #1b1b1b)!important}.brand h1 small{font-style:normal;font-weight:500}</style>
 </head>
 <body>
 <div class="container">
   <div class="brand">
     <img src="icons/icon-192.png" alt="Logo StatObs">
-    <h1>StatObs<small>Observation du sportif en EPS</small></h1>
+    <h1>Stat<span class="tm">Obs</span><small>Observation du sportif en EPS</small></h1>
   </div>
 
   <div class="banner" id="resume" hidden>
